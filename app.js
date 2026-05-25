@@ -5,71 +5,76 @@ const formStatus = document.querySelector("[data-form-status]");
 const year = document.querySelector("[data-year]");
 
 const versions = {
-  simple: {
-    eyebrow: "AI operations, under control",
-    headline: "Safe AI operations for IT.",
-    lede: "Run approved tools through a local gateway. Keep secrets protected. Audit every action.",
+  community: {
+    eyebrow: "Local-first IT automation",
+    headline: "Local IT helper. Safe fix buttons.",
+    lede: "See what broke, what changed, what is risky, and what can be safely fixed.",
     primaryCta: "See the features",
-    panelTitle: "Main features",
-    panelOne: "Local gateway.",
-    panelTwo: "Protected secrets.",
-    panelThree: "Audit trail.",
-    featureOneLabel: "Local",
-    featureOneTitle: "Runs at the site",
-    featureOneBody: "The Core can operate without a cloud control plane.",
-    featureTwoLabel: "Controlled",
-    featureTwoTitle: "Gateway approved",
-    featureTwoBody: "Agents never receive domain admin passwords, SSH keys, or SaaS tokens.",
-    featureThreeLabel: "Audited",
-    featureThreeTitle: "Every action recorded",
-    featureThreeBody: "Tool calls, approvals, actors, and results are kept for review.",
-    ctaEyebrow: "Start small",
-    ctaTitle: "Deploy one Core first.",
-    ctaBody: "Prove safe local automation at one site, then add memory, agents, and Central when they are useful."
+    panelTitle: "What OpsCMD does",
+    panelOne: "Finds broken checks.",
+    panelTwo: "Explains risky changes.",
+    panelThree: "Runs approved fixes.",
+    featureOneLabel: "Daily brief",
+    featureOneTitle: "What broke?",
+    featureOneBody: "A plain-English view of failures, risk, approvals, and recent fixes.",
+    featureTwoLabel: "Safe actions",
+    featureTwoTitle: "Fix the boring stuff",
+    featureTwoBody: "Agents ask for tools. The local gateway checks policy before anything runs.",
+    featureThreeLabel: "Proof",
+    featureThreeTitle: "Show the work",
+    featureThreeBody: "Reports, evidence, approvals, and audit history for owners and clients.",
+    ctaEyebrow: "Recommended start",
+    ctaTitle: "Run Community first. Add hosted proof when it matters.",
+    ctaBody:
+      "The free appliance should be useful on its own. Paid OpsCMD should sell reports, history, convenience, connector packs, support, and scale."
   },
-  core: {
-    eyebrow: "Standalone appliance for each site",
-    headline: "Run a Core at every site.",
-    lede: "FastAPI, dashboard, worker, database, tools, agents, secrets, backups, and audit logs in one portable Core.",
-    primaryCta: "View Core basics",
-    panelTitle: "Core appliance",
-    panelOne: "Docker Compose runtime.",
-    panelTwo: "Local network access.",
-    panelThree: "Works without Central.",
-    featureOneLabel: "Appliance",
-    featureOneTitle: "Rebuildable by design",
-    featureOneBody: "Runs on small Debian hardware or a hosted pilot environment.",
-    featureTwoLabel: "Execution",
-    featureTwoTitle: "Typed tool registry",
-    featureTwoBody: "Network, Windows, SSH, AD, Graylog, PDQ, doctor, backup, and connector tools.",
-    featureThreeLabel: "Controls",
-    featureThreeTitle: "Tokens and approvals",
-    featureThreeBody: "Low-risk reads can run fast. High-risk actions pause for approval.",
-    ctaEyebrow: "Core first",
-    ctaTitle: "Put the gateway close to the network.",
-    ctaBody: "Start with one local Core, then add more sites only when the first one is useful."
+  hosted: {
+    eyebrow: "Paid hosting for reports and visibility",
+    headline: "Hosted reports, alerts, and proof.",
+    lede:
+      "Keep local execution local. Add hosted alerts, daily brief history, branded reports, evidence, and multi-site visibility.",
+    primaryCta: "View hosted value",
+    panelTitle: "Hosted adds",
+    panelOne: "Email and web alerts.",
+    panelTwo: "Report history.",
+    panelThree: "MSP-ready proof.",
+    featureOneLabel: "Lite",
+    featureOneTitle: "Status and alerts",
+    featureOneBody: "Low monthly hosted visibility for one site without running another server.",
+    featureTwoLabel: "Solo IT",
+    featureTwoTitle: "Daily proof",
+    featureTwoBody: "Scheduled reports, alert history, and owner-ready summaries.",
+    featureThreeLabel: "MSP",
+    featureThreeTitle: "Multi-client view",
+    featureThreeBody: "Branded reports, client history, and proof of work across sites.",
+    ctaEyebrow: "Hosted path",
+    ctaTitle: "Charge for proof, reporting, alerts, and history.",
+    ctaBody:
+      "Hosted without inference should be the default. Hosted inference can be an add-on, while the local gateway still approves every action."
   },
-  central: {
-    eyebrow: "Fleet view when you need it",
-    headline: "Manage every Core from Central.",
-    lede: "Central is optional. It adds visibility, templates, updates, and backup aggregation without making Cores dependent on it.",
-    primaryCta: "See fleet model",
-    panelTitle: "Central model",
-    panelOne: "Cores keep running locally.",
-    panelTwo: "Central aggregates health.",
-    panelThree: "Policies and updates stay visible.",
-    featureOneLabel: "Fleet",
-    featureOneTitle: "Health in one place",
-    featureOneBody: "See which Cores are online, degraded, backed up, or waiting for updates.",
-    featureTwoLabel: "Templates",
-    featureTwoTitle: "Reuse good defaults",
-    featureTwoBody: "Push known-good policies, tool settings, and deployment templates.",
-    featureThreeLabel: "Rollback",
-    featureThreeTitle: "Safer updates",
-    featureThreeBody: "Coordinate upgrades, backups, and recovery across a fleet.",
-    ctaEyebrow: "Central later",
-    ctaTitle: "Add fleet management after Core works.",
-    ctaBody: "Central should make many Cores easier to manage, never become a requirement for one Core to operate."
+  appliance: {
+    eyebrow: "Optional prebuilt OpsCMD boxes",
+    headline: "Plug-in OpsCMD boxes.",
+    lede:
+      "Run OpsCMD locally, on a VPS, or on a prebuilt box. Add local inference only for privacy-heavy or offline-heavy sites.",
+    primaryCta: "View appliance options",
+    panelTitle: "Appliance options",
+    panelOne: "Self-hosted image.",
+    panelTwo: "Prebuilt small box.",
+    panelThree: "GPU inference model.",
+    featureOneLabel: "Standard",
+    featureOneTitle: "Plug-in local box",
+    featureOneBody: "Known-good mini PC, Debian, Docker, encrypted disk, and OpsCMD preinstalled.",
+    featureTwoLabel: "VPS",
+    featureTwoTitle: "Self-hosted cloud",
+    featureTwoBody: "Run an offsite dashboard, archive, or lightweight control plane on your own VPS.",
+    featureThreeLabel: "Private AI",
+    featureThreeTitle: "Local inference option",
+    featureThreeBody: "Use a local GPU or customer-hosted model when cloud inference is not acceptable.",
+    ctaEyebrow: "Appliance path",
+    ctaTitle: "Hardware is optional. Local-first is not.",
+    ctaBody:
+      "Appliances should make deployment easier, but OpsCMD must always support self-hosted installs, VPS installs, and swappable model providers."
   }
 };
 
@@ -78,7 +83,7 @@ if (year) {
 }
 
 function setTheme(theme) {
-  const version = versions[theme] || versions.simple;
+  const version = versions[theme] || versions.community;
   document.body.dataset.theme = theme;
   copyTargets.forEach((target) => {
     const key = target.dataset.copy;
@@ -96,7 +101,7 @@ function setTheme(theme) {
 
 themeButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    setTheme(button.dataset.themeChoice || "simple");
+    setTheme(button.dataset.themeChoice || "community");
   });
 });
 
@@ -108,4 +113,4 @@ if (contactForm && formStatus) {
   });
 }
 
-setTheme(window.localStorage.getItem("opscmd-site-theme") || "simple");
+setTheme(window.localStorage.getItem("opscmd-site-theme") || "community");

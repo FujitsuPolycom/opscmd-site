@@ -20,7 +20,7 @@
   text-rendering: optimizeLegibility;
 }
 
-body[data-theme="core"] {
+body[data-theme="hosted"] {
   --ink: #101828;
   --muted: #596779;
   --soft: #f3f7fb;
@@ -31,15 +31,15 @@ body[data-theme="core"] {
   --warm: #9a5a20;
 }
 
-body[data-theme="central"] {
+body[data-theme="appliance"] {
   --ink: #15171d;
   --muted: #646b78;
-  --soft: #f6f4ef;
-  --accent: #7a4f17;
-  --accent-strong: #3a2a19;
-  --accent-soft: #fff2db;
-  --second: #225c63;
-  --warm: #b14e3d;
+  --soft: #f4f6f8;
+  --accent: #225c63;
+  --accent-strong: #18373d;
+  --accent-soft: #e6f3f4;
+  --second: #176b54;
+  --warm: #b15c34;
 }
 
 * {

@@ -4,9 +4,9 @@ Super simple static marketing page for the OpsCMD product family.
 
 The page includes a three-version switcher:
 
-- Simple: shortest possible public pitch.
-- Core: local appliance/gateway pitch.
-- Central: optional fleet management pitch.
+- Community: free local-first software appliance pitch.
+- Hosted: paid alerts, reports, proof, and multi-site visibility pitch.
+- Appliance: self-hosted, VPS, prebuilt box, and local inference pitch.
 
 Open `index.html` directly in a browser. No build step is required.
 
