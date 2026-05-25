@@ -1,12 +1,12 @@
 # OpsCMD Website
 
-Super simple static marketing page for the OpsCMD product family:
+Super simple static marketing page for the OpsCMD product family.
 
-- OpsCMD Core
-- OpsCMD Memory
-- OpsCMD Roundtable
-- optional OpsCMD Central
-- gateway tools and earlier SysAudit work
+The page includes a three-version switcher:
+
+- Simple: shortest possible public pitch.
+- Core: local appliance/gateway pitch.
+- Central: optional fleet management pitch.
 
 Open `index.html` directly in a browser. No build step is required.
 
