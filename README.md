@@ -1,12 +1,8 @@
 # OpsCMD Website
 
-Super simple static marketing page for the OpsCMD product family.
+Static landing page for OpsCMD-core.
 
-The page includes a three-version switcher:
-
-- Community: free local-first software appliance pitch.
-- Hosted: paid alerts, reports, proof, and multi-site visibility pitch.
-- Appliance: self-hosted, VPS, prebuilt box, and local inference pitch.
+The page positions OpsCMD-core as an open-source IT automation appliance and tool harness with paid modules, hosted options, OpsCMD Central, and OpsCMD Business workflows.
 
 Open `index.html` directly in a browser. No build step is required.
 

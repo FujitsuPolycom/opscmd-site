@@ -5,124 +5,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="OpsCMD is a local-first IT automation software appliance with hosted reporting, safe fixes, and optional prebuilt boxes."
+      content="OpsCMD-core is an open-source IT automation appliance and tool harness for solo admins, owner-operators, MSPs, and midsize businesses."
     />
-    <title>OpsCMD | Local-First IT Automation Appliance</title>
-    <link rel="stylesheet" href="./styles.css?v=packaging-1" />
+    <title>OpsCMD-core | Open-Source IT Automation Appliance</title>
+    <link rel="stylesheet" href="./styles.css?v=core-landing-1" />
   </head>
-  <body data-theme="community">
+  <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="OpsCMD home">
         <span class="brand-mark" aria-hidden="true">OC</span>
-        <span>OpsCMD</span>
+        <span>OpsCMD-core</span>
       </a>
-      <div class="theme-switcher" aria-label="Site version">
-        <button class="theme-button is-active" type="button" data-theme-choice="community">Community</button>
-        <button class="theme-button" type="button" data-theme-choice="hosted">Hosted</button>
-        <button class="theme-button" type="button" data-theme-choice="appliance">Appliance</button>
-      </div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#run">Run it</a>
+        <a href="#lineup">Lineup</a>
+        <a class="nav-cta" href="#start">Start</a>
+      </nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow" data-copy="eyebrow">Local-first IT automation</p>
-          <h1 id="hero-title" data-copy="headline">Local IT helper. Safe fix buttons.</h1>
-          <p class="hero-lede" data-copy="lede">
-            See what broke, what changed, what is risky, and what can be safely fixed.
+          <p class="eyebrow">Open-source IT automation appliance</p>
+          <h1 id="hero-title">A safe command center for small IT teams.</h1>
+          <p class="hero-lede">
+            OpsCMD-core is a local-first collection of packages and a custom harness for IT tools,
+            AI assistants, reports, approvals, and audited fixes.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#features" data-copy="primaryCta">See the features</a>
-            <a class="button secondary" href="#how">How it works</a>
+            <a class="button primary" href="#features">See what it does</a>
+            <a class="button secondary" href="#lineup">Compare editions</a>
+          </div>
+          <div class="audience-row" aria-label="Audience">
+            <span>Solo admins</span>
+            <span>Owner operators</span>
+            <span>MSPs</span>
+            <span>Midsize businesses</span>
           </div>
         </div>
-        <div class="signal-panel" aria-label="OpsCMD summary">
-          <div class="status-row">
+
+        <div class="product-visual" aria-label="OpsCMD-core dashboard preview">
+          <div class="visual-topbar">
             <span></span>
-            <strong data-copy="panelTitle">What OpsCMD does</strong>
+            <strong>Daily Brief</strong>
+            <small>Gateway online</small>
           </div>
-          <ul>
-            <li data-copy="panelOne">Finds broken checks.</li>
-            <li data-copy="panelTwo">Explains risky changes.</li>
-            <li data-copy="panelThree">Runs approved fixes.</li>
-          </ul>
+          <div class="brief-list">
+            <div>
+              <span class="severity high">Risk</span>
+              <strong>2 backup checks need review</strong>
+              <p>Evidence captured. Safe remediation available after approval.</p>
+            </div>
+            <div>
+              <span class="severity medium">Change</span>
+              <strong>New admin login pattern detected</strong>
+              <p>Explained in plain English with linked audit events.</p>
+            </div>
+            <div>
+              <span class="severity low">Fix</span>
+              <strong>Restart stale service</strong>
+              <p>One safe button. Gateway approves, runs, and logs it.</p>
+            </div>
+          </div>
+          <div class="provider-strip">
+            <span>Local model</span>
+            <span>Cloud AI</span>
+            <span>BYO key</span>
+          </div>
         </div>
       </section>
 
       <section class="feature-strip" id="features" aria-label="Main features">
         <article>
-          <span data-copy="featureOneLabel">Daily brief</span>
-          <strong data-copy="featureOneTitle">What broke?</strong>
-          <p data-copy="featureOneBody">A plain-English view of failures, risk, approvals, and recent fixes.</p>
+          <span>Local-first</span>
+          <strong>Runs without vendor dependency</strong>
+          <p>Core keeps its own database, tools, secrets, policy, and audit logs.</p>
         </article>
         <article>
-          <span data-copy="featureTwoLabel">Safe actions</span>
-          <strong data-copy="featureTwoTitle">Fix the boring stuff</strong>
-          <p data-copy="featureTwoBody">Agents ask for tools. The local gateway checks policy before anything runs.</p>
+          <span>AI-flexible</span>
+          <strong>Use the model you want</strong>
+          <p>No AI, local model, local GPU, cloud GPU, BYO API key, or OpsCMD-hosted inference.</p>
         </article>
         <article>
-          <span data-copy="featureThreeLabel">Proof</span>
-          <strong data-copy="featureThreeTitle">Show the work</strong>
-          <p data-copy="featureThreeBody">Reports, evidence, approvals, and audit history for owners and clients.</p>
+          <span>Safe actions</span>
+          <strong>Gateway-controlled fixes</strong>
+          <p>Agents request tools. The gateway resolves secrets, checks policy, and records results.</p>
         </article>
       </section>
 
-      <section class="section" id="how" aria-labelledby="how-title">
-        <div class="section-head">
-          <p class="eyebrow">How it works</p>
-          <h2 id="how-title">A software appliance, not another loose chatbot.</h2>
+      <section class="section split-section" id="run" aria-labelledby="run-title">
+        <div>
+          <p class="eyebrow">Run it your way</p>
+          <h2 id="run-title">Local box, self-hosted VPS, cloud-hosted, or fully hosted.</h2>
+          <p>
+            OpsCMD-core starts as open source software you can run yourself. Paid options add
+            support, module acceleration, hosted convenience, managed reporting, and fleet scale.
+          </p>
         </div>
-        <div class="steps">
+        <div class="run-grid">
+          <div>
+            <strong>Local install</strong>
+            <span>Docker Compose on your own machine or mini PC.</span>
+          </div>
+          <div>
+            <strong>Self-hosted VPS</strong>
+            <span>Your cloud, your backups, your model provider.</span>
+          </div>
+          <div>
+            <strong>OpsCMD-hosted</strong>
+            <span>Managed dashboards, reports, alerts, and optional inference.</span>
+          </div>
+          <div>
+            <strong>Prebuilt boxes</strong>
+            <span>Known-good hardware, with or without local GPU inference.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="lineup" aria-labelledby="lineup-title">
+        <div class="section-head">
+          <p class="eyebrow">Product lineup</p>
+          <h2 id="lineup-title">Start open source. Add paid layers where they help.</h2>
+        </div>
+        <div class="lineup-grid">
           <article>
-            <span>1</span>
-            <h3>Observe</h3>
-            <p>Run checks locally against networks, Windows, Linux, logs, backups, and SaaS tools.</p>
+            <span>Free</span>
+            <h3>OpsCMD-core</h3>
+            <p>Open-source local appliance, package set, and IT tool harness for daily operations.</p>
+            <ul>
+              <li>Dashboard, gateway, worker, database</li>
+              <li>Local audit log and basic RBAC</li>
+              <li>Network, Windows, Linux, log, and report tools</li>
+            </ul>
           </article>
           <article>
-            <span>2</span>
-            <h3>Explain</h3>
-            <p>Summarize what changed, what is risky, and what the business impact is.</p>
+            <span>Paid modules</span>
+            <h3>Core Modules</h3>
+            <p>Support, connector packs, reporting packs, and accelerated custom module creation.</p>
+            <ul>
+              <li>Business integrations and workflows</li>
+              <li>Advanced reports and evidence exports</li>
+              <li>Custom module help when you need speed</li>
+            </ul>
           </article>
           <article>
-            <span>3</span>
-            <h3>Act</h3>
-            <p>Offer safe fix buttons, require approval for risky actions, and record everything.</p>
+            <span>Paid platform</span>
+            <h3>OpsCMD Central</h3>
+            <p>Manage multiple independent Cores without making any Core depend on Central.</p>
+            <ul>
+              <li>Fleet dashboard and site status</li>
+              <li>Report history, alerting, and entitlements</li>
+              <li>Templates, updates, and backup visibility</li>
+            </ul>
+          </article>
+          <article>
+            <span>Business edition</span>
+            <h3>OpsCMD Business</h3>
+            <p>Opinionated IT tools, flows, and plugins for solo Admin, CEO, HR, and office operators.</p>
+            <ul>
+              <li>Owner-ready daily brief</li>
+              <li>HR/admin/account workflows</li>
+              <li>Safe buttons for recurring business tasks</li>
+            </ul>
           </article>
         </div>
       </section>
 
-      <section class="section pieces" aria-labelledby="pieces-title">
+      <section class="section tools-section" aria-labelledby="tools-title">
         <div class="section-head">
-          <p class="eyebrow">Pieces</p>
-          <h2 id="pieces-title">Start free. Pay for convenience, proof, and scale.</h2>
+          <p class="eyebrow">First tool categories</p>
+          <h2 id="tools-title">Useful before it becomes huge.</h2>
         </div>
-        <div class="piece-list">
-          <div>
-            <strong>Community</strong>
-            <span>Free local software appliance with dashboard, tools, policy, secrets, and audit.</span>
-          </div>
-          <div>
-            <strong>Self-hosted</strong>
-            <span>Run locally or on your own VPS with Docker Compose and your own model provider.</span>
-          </div>
-          <div>
-            <strong>Hosted</strong>
-            <span>Alerts, report history, branded reports, evidence locker, and multi-site view.</span>
-          </div>
-          <div>
-            <strong>Appliances</strong>
-            <span>Prebuilt OpsCMD boxes, with optional local inference hardware for private sites.</span>
-          </div>
+        <div class="tool-cloud" aria-label="Tool categories">
+          <span>Daily brief</span>
+          <span>Windows checks</span>
+          <span>Linux SSH</span>
+          <span>Network tests</span>
+          <span>AD and M365</span>
+          <span>Graylog search</span>
+          <span>Backup evidence</span>
+          <span>Approval flows</span>
+          <span>Reports</span>
+          <span>Custom modules</span>
         </div>
       </section>
 
       <section class="section cta-section" id="start" aria-labelledby="start-title">
         <div>
-          <p class="eyebrow" data-copy="ctaEyebrow">Recommended start</p>
-          <h2 id="start-title" data-copy="ctaTitle">Run Community first. Add hosted proof when it matters.</h2>
-          <p data-copy="ctaBody">
-            The free appliance should be useful on its own. Paid OpsCMD should sell reports,
-            history, convenience, connector packs, support, and scale.
+          <p class="eyebrow">Launch path</p>
+          <h2 id="start-title">Free Core first. Central and Business when teams need scale.</h2>
+          <p>
+            The open-source Core should earn trust locally. Paid OpsCMD should sell convenience,
+            support, reporting, connector depth, custom workflows, hosting, and multi-Core control.
           </p>
         </div>
         <form class="contact-form" aria-label="Interest form">
@@ -133,26 +208,26 @@
           <label>
             Interest
             <select name="interest">
-              <option>Community install</option>
-              <option>Hosted Lite</option>
-              <option>Solo IT plan</option>
-              <option>MSP reporting</option>
+              <option>OpsCMD-core open source</option>
+              <option>Paid Core modules</option>
+              <option>OpsCMD Central</option>
+              <option>OpsCMD Business</option>
+              <option>Hosted OpsCMD</option>
               <option>Prebuilt appliance</option>
-              <option>Local inference appliance</option>
             </select>
           </label>
-          <button class="button primary" type="submit">Request a pilot</button>
+          <button class="button primary" type="submit">Request early access</button>
           <p class="form-status" data-form-status>Demo form only.</p>
         </form>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>OpsCMD</span>
-      <span>Local-first IT helper. Safe buttons. Useful reports. Optional hosting.</span>
+      <span>OpsCMD-core</span>
+      <span>Open source Core. Paid modules. Central for fleets. Business workflows for operators.</span>
       <span data-year>2026</span>
     </footer>
 
-    <script src="./app.js?v=packaging-1"></script>
+    <script src="./app.js?v=core-landing-1"></script>
   </body>
 </html>
