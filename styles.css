@@ -683,11 +683,8 @@ h3 {
     background-size: 42px 42px;
   }
 
-  .scene-board {
-    top: 100px;
-    right: -300px;
-    width: 620px;
-    opacity: 0.22;
+  .hero-scene {
+    display: none;
   }
 
   .hero-copy {
