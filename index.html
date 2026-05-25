@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OpsCMD is a local-first automation gateway for AI-assisted IT operations, with Core, Memory, Roundtable, and optional Central fleet management."
+    />
+    <title>OpsCMD | Local-First AI Operations</title>
+    <link rel="stylesheet" href="./styles.css?v=family-1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="OpsCMD home">
+        <span class="brand-mark" aria-hidden="true">OC</span>
+        <span>OpsCMD</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#products">Products</a>
+        <a href="#tools">Tools</a>
+        <a href="#deploy">Deploy</a>
+        <a class="nav-cta" href="#start">Start</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-scene" aria-hidden="true">
+          <div class="scene-board">
+            <div class="scene-panel panel-core">
+              <span class="panel-kicker">Core</span>
+              <strong>Gateway online</strong>
+              <div class="meter-row">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="tool-tags">
+                <span>network.ping</span>
+                <span>graylog.search</span>
+                <span>ad.get_user</span>
+              </div>
+            </div>
+            <div class="scene-panel panel-agent">
+              <span class="panel-kicker">Agent</span>
+              <strong>Pi requests a tool</strong>
+              <p>Gateway checks policy, approvals, secrets, and audit first.</p>
+            </div>
+            <div class="scene-panel panel-audit">
+              <span class="panel-kicker">Audit</span>
+              <div class="audit-line good"></div>
+              <div class="audit-line warn"></div>
+              <div class="audit-line"></div>
+            </div>
+            <div class="scene-link link-one"></div>
+            <div class="scene-link link-two"></div>
+          </div>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">Secure automation gateway for IT teams</p>
+          <h1 id="hero-title">OpsCMD</h1>
+          <p class="hero-lede">
+            Local-first infrastructure operations for humans and AI agents. Run tools through a
+            trusted gateway, keep secrets away from agents, and audit every action.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#products">See the product family</a>
+            <a class="button secondary" href="#tools">View tool coverage</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="OpsCMD highlights">
+        <div>
+          <strong>Core stays local</strong>
+          <span>Runs without Central.</span>
+        </div>
+        <div>
+          <strong>Gateway is trusted</strong>
+          <span>Agents never hold admin secrets.</span>
+        </div>
+        <div>
+          <strong>Every action is logged</strong>
+          <span>Tools, approvals, and results are auditable.</span>
+        </div>
+      </section>
+
+      <section class="section" id="products" aria-labelledby="products-title">
+        <div class="section-head">
+          <p class="eyebrow">Products</p>
+          <h2 id="products-title">A small family of tools that fit together.</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <span class="product-label">OpsCMD Core</span>
+            <h3>Site-local command center</h3>
+            <p>
+              A Docker Compose appliance with FastAPI, React, Postgres, Valkey, workers, tokens,
+              approvals, inventory, audit logs, and tool execution.
+            </p>
+          </article>
+          <article class="product-card">
+            <span class="product-label">OpsCMD Memory</span>
+            <h3>Durable context for agents</h3>
+            <p>
+              Scoped memory, document ingestion, search, sync cursors, consolidation, audit trails,
+              and MCP-friendly access for Pi, Hermes, and other agents.
+            </p>
+          </article>
+          <article class="product-card">
+            <span class="product-label">OpsCMD Roundtable</span>
+            <h3>Multi-agent review</h3>
+            <p>
+              A bounded roundtable workflow where builder, skeptic, integrator, and specialist
+              agents independently analyze work before a chair synthesizes a decision.
+            </p>
+          </article>
+          <article class="product-card">
+            <span class="product-label">OpsCMD Central</span>
+            <h3>Optional fleet view</h3>
+            <p>
+              Future fleet management for health aggregation, backups, templates, policy, update
+              orchestration, and visibility across many Cores.
+            </p>
+          </article>
+          <article class="product-card">
+            <span class="product-label">Gateway Tooling</span>
+            <h3>Typed operations contracts</h3>
+            <p>
+              Reusable tool definitions for Windows, AD, network, SSH, Graylog, PDQ, M365, Zoom,
+              Netdisco, Checkmk, local wiki search, backups, and doctor checks.
+            </p>
+          </article>
+          <article class="product-card">
+            <span class="product-label">SysAudit</span>
+            <h3>Portable Windows audit</h3>
+            <p>
+              A zero-dependency Windows Server audit CLI from the earlier OpsCMD work, useful as a
+              source of collectors and report patterns.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section tinted" id="tools" aria-labelledby="tools-title">
+        <div class="section-head narrow">
+          <p class="eyebrow">How it is used</p>
+          <h2 id="tools-title">Agents ask. The gateway decides.</h2>
+          <p>
+            OpsCMD turns infrastructure actions into typed, policy-aware tool calls. Low-risk reads
+            can run quickly. High-risk changes pause for approval before credentials are resolved.
+          </p>
+        </div>
+        <div class="flow-grid">
+          <article>
+            <span>1</span>
+            <h3>Request</h3>
+            <p>A human, Pi, Hermes, or another agent asks Core to run a named tool with typed args.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Gate</h3>
+            <p>Core checks token role, tool policy, network scope, secret scope, and approval rules.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Run</h3>
+            <p>The worker executes the job with bounded timeout, redaction, and server-side secrets.</p>
+          </article>
+          <article>
+            <span>4</span>
+            <h3>Audit</h3>
+            <p>Jobs, events, approvals, actors, outputs, and failures are recorded for review.</p>
+          </article>
+        </div>
+        <div class="tool-cloud" aria-label="Representative OpsCMD tools">
+          <span>network.ping</span>
+          <span>network.port_check</span>
+          <span>windows.get_services</span>
+          <span>windows.run_powershell</span>
+          <span>ssh.run_command</span>
+          <span>ad.unlock_user</span>
+          <span>graylog.search_windows_events</span>
+          <span>pdq.deploy_package</span>
+          <span>m365.get_user</span>
+          <span>zoom.get_meetings</span>
+          <span>wiki.search</span>
+          <span>doctor.health</span>
+        </div>
+      </section>
+
+      <section class="section" id="deploy" aria-labelledby="deploy-title">
+        <div class="section-head">
+          <p class="eyebrow">Deployment</p>
+          <h2 id="deploy-title">Start with one Core. Add more only when it helps.</h2>
+        </div>
+        <div class="deploy-grid">
+          <article class="deploy-card">
+            <h3>Local appliance</h3>
+            <p>
+              Run Core on an HP EliteDesk or ProDesk with Debian, Docker Compose, Tailscale,
+              Postgres, Valkey, gateway API, dashboard, worker, agents, and backups.
+            </p>
+          </article>
+          <article class="deploy-card">
+            <h3>Hosted Core pilot</h3>
+            <p>
+              A simple hosted offer can bundle a customer Core, managed cloud AI, an on-prem gateway
+              connector, audit logs, approvals, and support.
+            </p>
+          </article>
+          <article class="deploy-card">
+            <h3>Central later</h3>
+            <p>
+              Central is for fleets. It should aggregate health, backups, templates, and updates,
+              while every Core remains useful when Central is offline.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section cta-section" id="start" aria-labelledby="start-title">
+        <div>
+          <p class="eyebrow">Simple message</p>
+          <h2 id="start-title">Secure local automation, with AI as the helper.</h2>
+          <p>
+            The sales pitch is intentionally boring: a rebuildable gateway that knows your tools,
+            protects your credentials, and gives agents a safe way to help with real operations.
+          </p>
+        </div>
+        <form class="contact-form" aria-label="Interest form">
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@company.com" autocomplete="email" />
+          </label>
+          <label>
+            Interest
+            <select name="interest">
+              <option>Core appliance</option>
+              <option>Hosted Core pilot</option>
+              <option>Memory for agents</option>
+              <option>Roundtable workflow</option>
+              <option>Fleet Central</option>
+            </select>
+          </label>
+          <button class="button primary" type="submit">Request a pilot</button>
+          <p class="form-status" data-form-status>Demo form only. Wire this to your CRM later.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>OpsCMD</span>
+      <span>Local-first AI operations. Gateway-controlled, agent-friendly, audit-ready.</span>
+      <span data-year>2026</span>
+    </footer>
+
+    <script src="./app.js?v=family-1"></script>
+  </body>
+</html>
